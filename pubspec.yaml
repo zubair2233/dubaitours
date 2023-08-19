@@ -1,4 +1,4 @@
-name:  dubai_desert_safari
+name: dubai_desert_safari
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 version: 1.0.0+1
-  
+
 environment:
   sdk: ">=2.12.0 <3.0.0"
 
@@ -26,18 +26,18 @@ dependencies:
   chewie: ^1.2.2
   cloud_firestore: ^4.3.1
   cupertino_icons: ^1.0.2
-  dropdown_button2: ^1.9.2       
+  dropdown_button2: ^2.3.8
   firebase_auth: ^4.2.5
   firebase_core: ^2.4.1
   flutter:
     sdk: flutter
   flutter_admin_scaffold: ^1.1.2
   flutter_native_splash: ^2.2.17
-  # flutter_widget_from_html: ^0.9.1
   font_awesome_flutter: ^10.3.0
   form_field_validator: ^1.1.0
   regexed_validator: ^2.0.0+1
-  responsive_framework: ^0.2.0
+  responsive_builder: ^0.7.0
+  responsive_framework: ^1.1.0
   shared_preferences: ^2.0.0-nullsafety
   url_launcher: ^6.1.7
 

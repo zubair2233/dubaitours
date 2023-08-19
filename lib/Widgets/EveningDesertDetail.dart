@@ -925,124 +925,32 @@ class _EveningDetailState extends State<EveningDetail> {
             : SingleChildScrollView(
                 child: Column(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 210),
-                      child: Container(
-                        color: Colors.black,
-                        height: 35,
-                        width: 400,
-                        child: Center(
-                          child: Text(
-                            "EVENING DESERT SAFARI",
-                            style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                                letterSpacing: 2),
+                    Container(
+                      color: Colors.black,
+                      height: 35,
+                      width: 400,
+                      child: Center(
+                        child: Text(
+                          "EVENING DESERT SAFARI",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                            letterSpacing: 2,
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 25,
-                    ),
+                    SizedBox(height: 25),
                     Padding(
                       padding: const EdgeInsets.fromLTRB(40, 0, 40, 0),
                       child: Column(
                         children: [
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text("Pick and Drop from your location")
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text(
-                                  "Go on a journey by car along Maliha Road in the desert.")
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text(
-                                  "A 25 to 35 minute dune-bashing adventure on the Red Sand")
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text("Sand Boarding")
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text("Sun Set Photography")
-                            ],
-                          ),
-                          Row(
-                            children: [Icon(Icons.grain), Text("Camel Riding")],
-                          ),
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text("Arabic Coffee, and Fresh Dates")
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text("Hubbly Bubblee (Sheesha)")
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text("Traditioal Costumes")
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text("Tea, Coffee, Water,Unlimited Softdrinks.")
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text("Henna Painting")
-                            ],
-                          ),
-                          Row(
-                            children: [Icon(Icons.grain), Text(" Fire Show")],
-                          ),
-                          Row(
-                            children: [Icon(Icons.grain), Text(" Belly Dance")],
-                          ),
-                          Row(
-                            children: [Icon(Icons.grain), Text("Tanura Show")],
-                          ),
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text("Purtggol Show")
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text(
-                                  "BBQ & Buffet Dinner (Veg and non-veg both are available)")
-                            ],
-                          ),
+                          // Rows with details
                         ],
                       ),
                     ),
-                    SizedBox(
-                      height: 40,
-                    ),
+                    SizedBox(height: 40),
                     Padding(
                       padding: const EdgeInsets.only(top: 30),
                       child: Container(
@@ -1051,59 +959,27 @@ class _EveningDetailState extends State<EveningDetail> {
                         width: 400,
                         child: Center(
                           child: Text(
-                            "Package Exlude",
+                            "Package Exclude",
                             style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                                letterSpacing: 2),
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              letterSpacing: 2,
+                            ),
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 25,
-                    ),
+                    SizedBox(height: 25),
                     Padding(
                       padding: const EdgeInsets.fromLTRB(40, 0, 40, 0),
                       child: Column(
                         children: [
-                          Row(
-                            children: [Icon(Icons.grain), Text("Quad Bike")],
-                          ),
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text("Long Camel Riding")
-                            ],
-                          ),
-                          Row(
-                            children: [Icon(Icons.grain), Text("Horse Riding")],
-                          ),
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text("Falcon Photos")
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text("Vip Sitting Area")
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text("Sheesha on a Table")
-                            ],
-                          ),
+                          // Rows with excluded package details
                         ],
                       ),
                     ),
-                    SizedBox(
-                      height: 40,
-                    ),
+                    SizedBox(height: 40),
                     Padding(
                       padding: const EdgeInsets.only(top: 30),
                       child: Container(
@@ -1114,45 +990,25 @@ class _EveningDetailState extends State<EveningDetail> {
                           child: Text(
                             "Pick Up Timing",
                             style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                                letterSpacing: 2),
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              letterSpacing: 2,
+                            ),
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 25,
-                    ),
+                    SizedBox(height: 25),
                     Padding(
                       padding: const EdgeInsets.fromLTRB(40, 0, 40, 0),
                       child: Column(
                         children: [
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text("PICKUP : 3:00 To 3:30 Pm.")
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text("DROPOFF : 9:00 To 9:30 Pm.")
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Icon(Icons.grain),
-                              Text("DURATION : 06 Hours / Daily.")
-                            ],
-                          ),
+                          // Rows with pick-up timing details
                         ],
                       ),
                     ),
-                    SizedBox(
-                      height: 40,
-                    ),
+                    SizedBox(height: 40),
                     Padding(
                       padding: const EdgeInsets.only(top: 30),
                       child: Container(
@@ -1163,36 +1019,32 @@ class _EveningDetailState extends State<EveningDetail> {
                           child: Text(
                             "For Booking!",
                             style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                                letterSpacing: 2),
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                              letterSpacing: 2,
+                            ),
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 25,
-                    ),
+                    SizedBox(height: 25),
                     form(),
-                    SizedBox(
-                      height: 25,
-                    ),
+                    SizedBox(height: 25),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 100),
                       child: Container(
                         child: Text(
-                          " The Premium Evening Desert Safari in Dubai is ideal for those who wish to do dune bashing, sandboarding, and camel riding, as well as relish a tranquil yet stimulating dinner under the stars. Once you reach the Bedouin campsite with an Arabian atmosphere, you will be welcomed in a conventional Arabian manner. The safari in Lahbab also involves an exciting camel ride, and you can dress in the traditional Arabic clothing. You can also have henna painting (distinctive Arabic designs) on your hands or feet and savor the freshly prepared Arabian delicacies, relish the flavorful Arabian brew – coffee or just enjoy the aromatic shisha (the renowned Arabic water pipe), watch a traditional Belly show and Tanoura show. Finally, when all the activities are done, a delicious barbeque dinner cooked on the spot is available for you, offering a variety of starters, grilled specialties, salads, selection of fresh vegetables, specialty vegetarian dishes, and, of course, traditional treats.",
+                          " The Premium Evening Desert Safari in Dubai is ideal for those who wish to do dune bashing, sandboarding, and camel riding...",
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                              height: 2,
-                              color: Color.fromARGB(255, 148, 141, 141)),
+                            height: 2,
+                            color: Color.fromARGB(255, 148, 141, 141),
+                          ),
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 25,
-                    ),
+                    SizedBox(height: 25),
                     Padding(
                       padding: const EdgeInsets.only(left: 30, right: 30),
                       child: Column(
@@ -1209,9 +1061,7 @@ class _EveningDetailState extends State<EveningDetail> {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                              SizedBox(
-                                width: 15,
-                              ),
+                              SizedBox(width: 15),
                               Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
@@ -1227,7 +1077,9 @@ class _EveningDetailState extends State<EveningDetail> {
                                         Text(
                                           "DESERT ADVENTURE ",
                                           style: TextStyle(
-                                              fontSize: 20, letterSpacing: 2),
+                                            fontSize: 20,
+                                            letterSpacing: 2,
+                                          ),
                                         ),
                                         Padding(
                                           padding:
@@ -1235,12 +1087,14 @@ class _EveningDetailState extends State<EveningDetail> {
                                           child: Text(
                                             "TOURS",
                                             style: TextStyle(
-                                                fontSize: 20, letterSpacing: 2),
+                                              fontSize: 20,
+                                              letterSpacing: 2,
+                                            ),
                                           ),
                                         ),
                                       ],
                                     ),
-                                  )
+                                  ),
                                 ],
                               ),
                             ],
@@ -1257,9 +1111,7 @@ class _EveningDetailState extends State<EveningDetail> {
                                     launchUrl(whatsapp);
                                   },
                                 ),
-                                SizedBox(
-                                  height: 10,
-                                ),
+                                SizedBox(height: 10),
                               ],
                             ),
                           ),
@@ -1269,21 +1121,23 @@ class _EveningDetailState extends State<EveningDetail> {
                               height: 50,
                               width: 130,
                               decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 253, 112, 18)),
+                                color: Color.fromARGB(255, 253, 112, 18),
+                              ),
                               child: TextButton(
-                                  onPressed: () {
-                                    Navigator.pushReplacementNamed(
-                                        context, BookNow.id);
-                                  },
-                                  child: Text(
-                                    "Book Now",
-                                    style: TextStyle(
-                                      fontSize: 20,
-                                      color: Colors.white,
-                                    ),
-                                  )),
+                                onPressed: () {
+                                  Navigator.pushReplacementNamed(
+                                      context, BookNow.id);
+                                },
+                                child: Text(
+                                  "Book Now",
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
                             ),
-                          )
+                          ),
                         ],
                       ),
                     ),

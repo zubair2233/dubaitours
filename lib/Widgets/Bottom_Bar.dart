@@ -56,7 +56,7 @@ class BottomBar extends StatelessWidget {
                         ),
                         InfoText(
                           type: 'Address',
-                          text: 'Muhammadia town near DHQ Hospital Sahiwal',
+                          text: 'Sahiwal Pakistan',
                         ),
                       ],
                     ),

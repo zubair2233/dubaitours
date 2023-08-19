@@ -18,33 +18,63 @@ class FeaturedHeading extends StatelessWidget {
           ? Row(mainAxisAlignment: MainAxisAlignment.center, children: [
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  SizedBox(
+                    height: 115,
+                  ),
                   Text(
-                    'About Evening Desert\nSafari Tour',
+                    'Dubai Safaris Desert',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        fontSize: 25,
+                        fontSize: 50,
+                        fontWeight: FontWeight.bold,
                         fontFamily: 'Raleway',
-                        color: Color(0xFF077bd7)),
+                        color: Colors.white),
+                  ),
+                  Text(
+                    'Let\'move to Dubai',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Raleway',
+                        color: Colors.black),
                   ),
                 ],
               ),
             ])
           : Center(
-              child: Row(
+              child:
+                  Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Column(
                 mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  SizedBox(
+                    height: 115,
+                  ),
                   Text(
-                    'About Evening Desert Safari Tour',
+                    'Dubai Safaris Desert',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
-                        fontSize: 26,
+                        fontSize: 50,
+                        fontWeight: FontWeight.bold,
                         fontFamily: 'Raleway',
-                        color: Color(0xFF077bd7)),
+                        color: Colors.white),
+                  ),
+                  Text(
+                    'Let\'move to Dubai',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Raleway',
+                        color: Colors.black),
                   ),
                 ],
               ),
-            ),
+            ])),
     );
   }
 }

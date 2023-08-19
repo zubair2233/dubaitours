@@ -2,8 +2,6 @@ import 'package:dubai_desert_safari/Pages/EveningDesertSafari.dart';
 import 'package:dubai_desert_safari/Screens/HomePage.dart';
 import 'package:flutter/material.dart';
 
-import '../Pages/EveningDesertSafari+Atv.dart';
-
 class MenuDrawer extends StatelessWidget {
   MenuDrawer({
     Key? key,
@@ -49,26 +47,6 @@ class MenuDrawer extends StatelessWidget {
                   },
                   child: Text(
                     'Evening Desert Safari',
-                    style: TextStyle(
-                        color: Color.fromARGB(255, 82, 75, 75), fontSize: 22),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
-                child: Divider(
-                  color: Colors.blueGrey.shade400,
-                  thickness: 2,
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: InkWell(
-                  onTap: () {
-                    Navigator.pushNamed(context, EveningDesertAtv.id);
-                  },
-                  child: Text(
-                    'Evening Desert Safari + ATV',
                     style: TextStyle(
                         color: Color.fromARGB(255, 82, 75, 75), fontSize: 22),
                   ),

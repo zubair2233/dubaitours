@@ -7,7 +7,6 @@ import 'package:dubai_desert_safari/Widgets/Bottom_Bar.dart';
 import 'package:dubai_desert_safari/Widgets/Form.dart';
 // import 'package:dubai_desert_safari/Widgets/Mian_Heading.dart';
 import 'package:dubai_desert_safari/Widgets/TopBarContent.dart';
-import 'package:dubai_desert_safari/Widgets/manu_drawer.dart';
 // import 'package:dubai_desert_safari/Widgets/textColumn.dart';
 // import 'package:url_launcher/url_launcher.dart';
 
@@ -39,22 +38,24 @@ class _BookNowState extends State<BookNow> {
               iconTheme: IconThemeData(color: Colors.blue),
               elevation: 0,
               backgroundColor: Colors.white.withOpacity(_opacity),
-              title: Text(
-                'Desert Adventure Tour',
-                style: TextStyle(
-                  color: Color(0xFF077bd7),
-                  fontSize: 20,
-                  fontFamily: "Raleway",
-                  fontWeight: FontWeight.w900,
-                  letterSpacing: 3,
-                ),
+              title: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Dubai Safaris Desert",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ],
               ),
             )
           : PreferredSize(
               preferredSize: Size(screenSize.width, 70),
               child: TopBarContent(_opacity),
             ),
-      drawer: MenuDrawer(screenSize: screenSize),
+      // drawer: MenuDrawer(screenSize: screenSize),
       body: Stack(
         children: [
           ListView(

@@ -527,79 +527,72 @@ class _TextColumnState extends State<TextColumn> {
                   SizedBox(
                     height: 40,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 100, right: 100),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Text(
-                          "DUBAI DESERT SAFARI",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 24,
-                            letterSpacing: 3,
-                            fontWeight: FontWeight.bold,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "DUBAI DESERT SAFARI",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 24,
+                          letterSpacing: 3,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.lock_clock_rounded,
+                            size: 40,
                           ),
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(
-                              Icons.lock_clock_rounded,
-                              size: 40,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 18),
-                              child: Column(
-                                children: [
-                                  Text(
-                                    "DUBAI DESERT ",
+                          Padding(
+                            padding: const EdgeInsets.only(top: 18),
+                            child: Column(
+                              children: [
+                                Text(
+                                  "DUBAI DESERT ",
+                                  style:
+                                      TextStyle(fontSize: 20, letterSpacing: 2),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 130),
+                                  child: Text(
+                                    "SAFARI",
                                     style: TextStyle(
                                         fontSize: 20, letterSpacing: 2),
                                   ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(left: 130),
-                                    child: Text(
-                                      "SAFARI",
-                                      style: TextStyle(
-                                          fontSize: 20, letterSpacing: 2),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            )
-                          ],
-                        ),
-                        SizedBox(
-                          width: 100,
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 30),
-                          child: Container(
-                            height: 50,
-                            width: 130,
-                            decoration: BoxDecoration(
-                                color: Color.fromARGB(255, 253, 112, 18)),
-                            child: TextButton(
-                                onPressed: () {
-                                  Navigator.pushReplacementNamed(
-                                      context, BookNow.id);
-                                },
-                                child: Text(
-                                  "Book Now",
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    color: Colors.white,
-                                  ),
-                                )),
-                          ),
-                        )
-                      ],
-                    ),
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
                   ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 30, right: 30),
+                    child: Container(
+                      height: 50,
+                      width: 130,
+                      decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 253, 112, 18)),
+                      child: TextButton(
+                          onPressed: () {
+                            Navigator.pushReplacementNamed(context, BookNow.id);
+                          },
+                          child: Text(
+                            "Book Now",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                            ),
+                          )),
+                    ),
+                  )
                 ],
               );
   }

@@ -2,14 +2,13 @@ import 'package:admanager_web/admanager_web.dart';
 import 'package:dubai_desert_safari/Widgets/Bottom_Bar.dart';
 import 'package:dubai_desert_safari/Widgets/Carousel_slider.dart';
 import 'package:dubai_desert_safari/Widgets/Featured_heading.dart';
-import 'package:dubai_desert_safari/Widgets/Featured_tiles.dart';
-import 'package:dubai_desert_safari/Widgets/Floating_quick_access_bar.dart';
 import 'package:dubai_desert_safari/Widgets/TopBarContent.dart';
-import 'package:dubai_desert_safari/Widgets/manu_drawer.dart';
 import 'package:dubai_desert_safari/Widgets/textColumn.dart';
 import 'package:flutter/material.dart';
 
 import 'package:url_launcher/url_launcher.dart';
+
+import '../Widgets/manu_drawer.dart';
 
 class HomePage extends StatefulWidget {
   static const id = "/HomePage";
@@ -45,7 +44,21 @@ class _HomePageState extends State<HomePage> {
       extendBodyBehindAppBar: true,
       appBar: screenSize.width < 800
           ? AppBar(
-              backgroundColor: Colors.transparent,
+              iconTheme: IconThemeData(color: Colors.white),
+              elevation: 0,
+              backgroundColor: Colors.white.withOpacity(_opacity),
+              title: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Dubai Safaris Desert",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
             )
           : PreferredSize(
               preferredSize: Size(screenSize.width, 70),
@@ -71,9 +84,10 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Column(
                       children: [
-                        FloatingQuickAccessBar(screenSize: screenSize),
                         FeaturedHeading(screenSize: screenSize),
-                        FeaturedTiles(screenSize: screenSize),
+                        SizedBox(
+                          height: 200,
+                        ),
                         MainCarousel(),
                         TextColumn(),
                         BottomBar(),
@@ -101,14 +115,6 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          // AdBlock(
-          //   size: AdBlockSize.largeRectangle,
-          //   adUnitId: "1647933054",
-          // )
-          // AdBlock(
-          //   size: AdBlockSize.largeRectangle,
-          //   adUnitId: "1647933054",
-          // )
         ],
       ),
     );
